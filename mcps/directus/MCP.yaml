@@ -1,0 +1,39 @@
+id: directus
+name: Directus
+description: Directus Content MCP Server that provides seamless integration with Directus APIs, enabling AI tools to manage content, collections, fields, and automation workflows.
+author: directus
+url: https://github.com/directus/mcp
+tags:
+  - directus
+  - cms
+  - content-management
+  - headless-cms
+  - api-integration
+prerequisites:
+  - Node.js
+  - Directus v11.12+ (for built-in MCP) or any version with @directus/content-mcp
+  - Directus URL and authentication token or user credentials
+content: |
+  {
+    "command": "npx",
+    "args": ["@directus/content-mcp@latest"],
+    "env": {
+      "DIRECTUS_URL": "{{DIRECTUS_URL}}",
+      "DIRECTUS_TOKEN": "{{DIRECTUS_TOKEN}}"
+    }
+  }
+parameters:
+  - name: Directus URL
+    key: DIRECTUS_URL
+    placeholder: https://your-directus-instance.com
+  - name: Directus Token
+    key: DIRECTUS_TOKEN
+    placeholder: your_directus_token_here
+  - name: Directus User Email
+    key: DIRECTUS_USER_EMAIL
+    placeholder: user@example.com
+    optional: true
+  - name: Directus User Password
+    key: DIRECTUS_USER_PASSWORD
+    placeholder: your_password_here
+    optional: true

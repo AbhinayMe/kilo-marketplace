@@ -9,8 +9,10 @@ tags:
   - content-management
   - headless-cms
   - api-integration
+prerequisites:
+  - Directus instance (v11.12+ for built-in MCP)
 content:
-  - name: NPX (Local MCP)
+  - name: NPX (Token Auth)
     prerequisites:
       - Node.js
     content: |
@@ -22,7 +24,7 @@ content:
           "DIRECTUS_TOKEN": "{{DIRECTUS_TOKEN}}"
         }
       }
-  - name: NPX (Local MCP with Email/Password)
+  - name: NPX (Email/Password Auth)
     prerequisites:
       - Node.js
     content: |
@@ -35,7 +37,7 @@ content:
           "DIRECTUS_USER_PASSWORD": "{{DIRECTUS_USER_PASSWORD}}"
         }
       }
-  - name: Streamable HTTP (Built-in MCP)
+  - name: Streamable HTTP
     prerequisites:
       - Directus v11.12+
     content: |

@@ -1,7 +1,7 @@
 id: directus
 name: Directus
 description: Directus Content MCP Server that provides seamless integration with Directus APIs, enabling AI tools to manage content, collections, fields, automation workflows, and more.
-author: Abhinay Me
+author: directus
 url: https://github.com/directus/mcp
 tags:
   - directus
@@ -9,6 +9,7 @@ tags:
   - content-management
   - headless-cms
   - api-integration
+  - official
 prerequisites:
   - Directus instance (v11.12+ for built-in MCP)
 content:
